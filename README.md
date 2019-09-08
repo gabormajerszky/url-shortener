@@ -2,6 +2,18 @@
 
 Simple app that lets you shorten a url by using redirects
 
+## How to run
+
+First, maven needs to be installed, then in the project folder
+```
+mvn install
+```
+Start the application with
+
+```
+mvn spring-boot:run
+```
+
 ## Usage
 
 Simply send a get request with a **url encoded** parameter:
