@@ -16,11 +16,7 @@ mvn spring-boot:run
 
 ## Usage
 
-Simply send a get request with a **url encoded** parameter:
-```
-http://domain.com/shorten?url=yourlongencodedurl
-```
-The server should respond with:
+Send a POST request with the url as the message body. The server should respond with:
 ```
 { "longUrl": "yourlongencodedurl", "shortUrl": "yournewshorturl" }
 ```

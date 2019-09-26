@@ -8,7 +8,7 @@ class UrlshortenerModel(private val requestParam: String,
 
     fun createShortUrl(host: String, longUrl: String) : String {
         val id = idGenerator.getNext()
-        val shortUrl = "$host?$requestParam=$id"
+        val shortUrl = "http://$host?$requestParam=$id"
         database.save(id, longUrl)
         return shortUrl
     }
